@@ -1,0 +1,128 @@
+/* General body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7ff; /* Soft lavender background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container for the to-do list */
+  .todo-container {
+    background-color: #ffffff; /* White card */
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Title of the to-do list */
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #4b4453; /* Dark mauve */
+  }
+  
+  /* Input container styles */
+  .input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Input field styles */
+  input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #c7d2fe; /* Light periwinkle */
+    border-radius: 8px;
+    background-color: #f0f4ff; /* Soft periwinkle */
+    color: #4b4453; /* Dark mauve */
+  }
+  
+  input::placeholder {
+    color: #9aa5cf; /* Muted periwinkle */
+  }
+  
+  /* Button styles */
+  button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #9cbde6; /* Soft blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #7ea6da; /* Slightly darker blue */
+    transform: translateY(-2px);
+  }
+  
+  button:active {
+    transform: translateY(0);
+  }
+  
+  /* Task list styles */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    background-color: #e3fcec; /* Soft mint */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  li.completed {
+    background-color: #d1ffd6; /* Softer green */
+    text-decoration: line-through;
+    color: #6a8f6b; /* Muted green text */
+  }
+  
+  li span {
+    font-size: 16px;
+    color: #4b4453; /* Dark mauve */
+  }
+  
+  /* Task action buttons */
+  li button {
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  li button.complete {
+    background-color: #5dc88f; /* Mint green */
+  }
+  
+  li button.complete:hover {
+    background-color: #4ab97d; /* Darker mint */
+  }
+  
+  li button.delete {
+    background-color: #f87c7c; /* Soft coral red */
+  }
+  
+  li button.delete:hover {
+    background-color: #e36666; /* Darker coral */
+  }
+  
